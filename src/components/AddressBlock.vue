@@ -9,7 +9,7 @@
       <span class="city">{{ city }}</span>
       Круглосуточно
     </a>
-    <a  href="tel:+78142332211" class="phone-number">{{ phone }}</a>
+    <a  href="" class="phone-number">{{ phone }}</a>
   </div>
 </template>
 

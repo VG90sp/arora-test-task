@@ -31,25 +31,40 @@
         phone="+7(495) 980-66-22"
         />
       </div>
-      <breadcrumbs-block />
     </header>
+    <main class="page__main">
+      <breadcrumds-block />
+      <div class="page__main__products">
+        <product-block
+        product_name="Чизбургер барбекю"
+        product_text="Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук"
+        price=8888
+        />
+        <product-block />
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
 import AddressBlock from '@/components/AddressBlock.vue'
-import BreadcrumbsBlock from '@/components/BreadcrumbsBlock.vue'
+import BreadcrumdsBlock from '@/components/BreadcrumbsBlock.vue'
+import ProductBlock from '@/components/ProductBlock.vue'
 
 export default {
   components: {
     AddressBlock,
-    BreadcrumbsBlock
+    BreadcrumdsBlock,
+    ProductBlock
   },
 
   data () {
     return {
       city: '',
-      phone: ''
+      phone: '',
+      product_name: '',
+      product_text: '',
+      price: ''
     }
   }
 }
@@ -75,6 +90,12 @@ export default {
       width: 100%;
       justify-content: space-between;
     }
+  }
+  &__main {
+    margin: 0 64px 0px 64px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
   }
  }
 }
