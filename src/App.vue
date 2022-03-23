@@ -38,9 +38,69 @@
         <product-block
         product_name="Чизбургер барбекю"
         product_text="Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук"
-        price=8888
+        price=888
         />
-        <product-block />
+        <product-block
+        product_name="Суприм"
+        product_text="Соус томатный, сыр моцарелла, колбаса пепперони, ветчина, лук, сладкий перец, грибной микс, свинина, говядина, оливки черные"
+        price=690
+        novel= true
+        />
+        <product-block
+        product_name="Бургер «Два сыра»"
+        product_text="Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно"
+        price=180
+        novel= true
+        />
+        <product-block
+        product_name="Суши Унаги»"
+        product_text="Угорь"
+        price=120
+        novel= true
+        />
+        <product-block
+        product_name="Умэ"
+        product_text="Лосось, угорь, сыр «Филадельфия», авокадо"
+        price=385
+        novel= true
+        />
+      </div>
+      <div class="page__main__present">
+        <h2 class="title">Подарки</h2>
+        <present-block
+        product_name='Морс "Смородина"'
+        product_text='Морс "Смородина", 1 л'
+        present= true
+         />
+      </div>
+      <div class="page__main__recommend">
+        <h2 class="title">Рекомендуем</h2>
+        <div class="page__main__recommend__products">
+          <recommend-block
+            product_name='Чизбургер барбекю'
+            product_text='Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук'
+            price="от 287 ₽"
+            from_sum= true
+          />
+           <recommend-block
+            product_name='Бургер «Два сыра»'
+            product_text='Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно'
+            price="387 ₽"
+            novel= true
+          />
+            <recommend-block
+            product_name='Суши Эби'
+            product_text='Креветка'
+            price="130 ₽"
+            novel= true
+          />
+          <recommend-block
+            product_name='Чизбургер барбекю'
+            product_text='Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук'
+            price="от 287 ₽"
+            from_sum= true
+          />
+        </div>
       </div>
     </main>
   </div>
@@ -50,12 +110,16 @@
 import AddressBlock from '@/components/AddressBlock.vue'
 import BreadcrumdsBlock from '@/components/BreadcrumbsBlock.vue'
 import ProductBlock from '@/components/ProductBlock.vue'
+import PresentBlock from '@/components/PresentBlock.vue'
+import RecommendBlock from '@/components/RecommendBlock.vue'
 
 export default {
   components: {
     AddressBlock,
     BreadcrumdsBlock,
-    ProductBlock
+    ProductBlock,
+    PresentBlock,
+    RecommendBlock
   },
 
   data () {
@@ -96,6 +160,24 @@ export default {
     display: flex;
     max-width: 100%;
     flex-direction: column;
+
+          .title {
+        margin: 67px 0 0 0;
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 44px;
+        color: black
+      }
+
+      &__recommend__products {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #B3B3B3;
+        padding-bottom: 64px;
+      }
   }
  }
 }
