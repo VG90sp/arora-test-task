@@ -34,7 +34,7 @@
     </header>
     <main class="page__main">
       <breadcrumds-block />
-      <div class="page__main__products">
+        <div class="page__main__products">
         <product-block
         product_name="Чизбургер барбекю"
         product_text="Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук"
@@ -64,7 +64,10 @@
         price=385
         novel= true
         />
-      </div>
+        </div>
+        <aside class="page__main__aside">
+          <sidebar-block />
+        </aside>
       <div class="page__main__present">
         <h2 class="title">Подарки</h2>
         <present-block
@@ -109,6 +112,8 @@
         />
       </div>
     </main>
+    <footer class="page__footer">
+    </footer>
   </div>
 </template>
 
@@ -119,6 +124,7 @@ import ProductBlock from '@/components/ProductBlock.vue'
 import PresentBlock from '@/components/PresentBlock.vue'
 import RecommendBlock from '@/components/RecommendBlock.vue'
 import TotalBlock from '@/components/TotalBlock.vue'
+import SidebarBlock from '@/components/SidebarBlock.vue'
 
 export default {
   components: {
@@ -127,7 +133,8 @@ export default {
     ProductBlock,
     PresentBlock,
     RecommendBlock,
-    TotalBlock
+    TotalBlock,
+    SidebarBlock
   },
 
   data () {
@@ -164,6 +171,7 @@ export default {
     }
   }
   &__main {
+     position: relative;
     margin: 0 64px 0px 64px;
     display: flex;
     max-width: 100%;
@@ -192,6 +200,18 @@ export default {
         margin: 32px 0 70px 0;
         justify-content: flex-end;
       }
+
+      &__aside {
+            content: "";
+            position: absolute;
+            left: 62%;
+            top:84px
+      }
+  }
+
+  &__footer {
+    background: black;
+    padding: 32px 64px 32px 64px;
   }
  }
 }

@@ -51,18 +51,18 @@ export default {
           }
       }
       button {
-              height: 64px;
-              background: #CC693E;
-              border-radius: 32px;
-              border: 2px solid #CC693E;
-              font-family: 'Roboto Slab';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 18px;
-              line-height: 24px;
-              color: #FFFFFF;
-              margin-top: 32px;
-               width:100%;
+        width:100%;
+        height: 64px;
+        background: #CC693E;
+        border-radius: 32px;
+        border: 2px solid #CC693E;
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-top: 32px;
       }
   }
 
