@@ -102,6 +102,12 @@
           />
         </div>
       </div>
+      <div class="page__main__total">
+        <total-block
+        sale_price= 4200
+        total_price= "3580 ₽"
+        />
+      </div>
     </main>
   </div>
 </template>
@@ -112,6 +118,7 @@ import BreadcrumdsBlock from '@/components/BreadcrumbsBlock.vue'
 import ProductBlock from '@/components/ProductBlock.vue'
 import PresentBlock from '@/components/PresentBlock.vue'
 import RecommendBlock from '@/components/RecommendBlock.vue'
+import TotalBlock from '@/components/TotalBlock.vue'
 
 export default {
   components: {
@@ -119,7 +126,8 @@ export default {
     BreadcrumdsBlock,
     ProductBlock,
     PresentBlock,
-    RecommendBlock
+    RecommendBlock,
+    TotalBlock
   },
 
   data () {
@@ -177,6 +185,12 @@ export default {
         flex-wrap: wrap;
         border-bottom: 2px solid #B3B3B3;
         padding-bottom: 64px;
+      }
+
+      &__total {
+        display: flex;
+        margin: 32px 0 70px 0;
+        justify-content: flex-end;
       }
   }
  }
