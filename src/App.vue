@@ -1,4 +1,3 @@
-/* eslint-disable vue/no-unused-components */
 <template>
   <div class="page">
     <header class="page__header">
@@ -113,6 +112,7 @@
       </div>
     </main>
     <footer class="page__footer">
+      <footer-block />
     </footer>
   </div>
 </template>
@@ -125,6 +125,7 @@ import PresentBlock from '@/components/PresentBlock.vue'
 import RecommendBlock from '@/components/RecommendBlock.vue'
 import TotalBlock from '@/components/TotalBlock.vue'
 import SidebarBlock from '@/components/SidebarBlock.vue'
+import FooterBlock from '@/components/FooterBlock.vue'
 
 export default {
   components: {
@@ -134,7 +135,8 @@ export default {
     PresentBlock,
     RecommendBlock,
     TotalBlock,
-    SidebarBlock
+    SidebarBlock,
+    FooterBlock
   },
 
   data () {
