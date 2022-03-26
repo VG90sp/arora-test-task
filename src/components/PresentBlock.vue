@@ -61,14 +61,9 @@ export default {
       Number,
       required: true
     },
-    price: {
-      type: String,
-      Number,
-      required: true
-    },
     present: {
-      type: Boolean,
-      default: false
+      type: String,
+      required: false
     }
   },
 

@@ -52,8 +52,7 @@ export default {
 
   data: function () {
     return {
-      counter: 1,
-      image: require('../assets/images/image-1.jpg')
+      counter: 1
     }
   },
 
@@ -74,8 +73,12 @@ export default {
       required: true
     },
     novel: {
-      type: Boolean,
-      default: false
+      type: String,
+      required: false
+    },
+    image: {
+      type: String,
+      required: true
     }
   },
 

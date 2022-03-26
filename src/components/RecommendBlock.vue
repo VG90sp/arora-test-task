@@ -24,7 +24,7 @@
       </defs>
       </svg>
     </div>
-      <img src="../assets/images/image-rec-1.jpg">
+      <img :src="image_rec">
       <div class="product_recommend__composition">
         <span class="product_recommend__composition__name">{{ product_name }}</span>
         <p>{{ product_text }}</p>
@@ -59,12 +59,16 @@ export default {
       required: true
     },
     from_sum: {
-      type: Boolean,
+      type: String,
       required: false
     },
     novel: {
-      type: Boolean,
-      default: false
+      type: String,
+      required: false
+    },
+    image_rec: {
+      type: String,
+      required: true
     }
   }
 }
