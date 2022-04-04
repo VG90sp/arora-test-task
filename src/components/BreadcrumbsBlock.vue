@@ -42,4 +42,21 @@ export default {
         padding: 0 20px 0 20px;
       }
     }
+    @media(max-width: 479px) {
+      .breadcrumbs {
+        margin: 36px 0 0 16px;
+        display: flex;
+        flex-wrap: nowrap;
+         overflow-x: auto;
+
+        h2 {
+          font-family: 'Roboto Slab';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 28px;
+          flex: 0 0 auto;
+        }
+      }
+    }
 </style>

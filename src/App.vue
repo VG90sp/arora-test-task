@@ -30,8 +30,46 @@
         phone="+7(495) 980-66-22"
         />
       </div>
+      <div class="page__header__burger__menu">
+        <hamburger-menu />
+      </div>
     </header>
     <main class="page__main">
+      <div class="page__main__icons">
+        <div class="page__main__icons__phone">
+          <button class="btn_phone">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.94159 0.0975844C5.37299 -0.118118 5.89774 0.0346889 6.14589 0.448277L9.46885 5.98654C9.71083 6.38985 9.61073 6.91015 9.23756 7.19504L7.67238 8.42818C7.34343 8.68734 7.24476 9.11105 7.40679 9.44533C8.92628 12.5802 11.4783 15.0861 14.5533 16.5881C14.889 16.7521 15.3149 16.6536 15.5749 16.3236L16.805 14.7624C17.0899 14.3893 17.6102 14.2892 18.0135 14.5312L23.5517 17.8541C23.9653 18.1023 24.1181 18.627 23.9024 19.0584L21.6871 23.489C21.5308 23.8017 21.2111 23.9993 20.8615 23.9993C9.57912 23.9993 0.424925 14.819 0.0150602 3.38563C0.014408 3.36744 0.0135383 3.35923 0.0119519 3.34425C0.0103864 3.32947 0.00812318 3.3081 0.00468251 3.26406C-0.000185368 3.20174 -0.00579664 3.0998 0.0136125 2.98483C0.0214856 2.93819 0.0329764 2.89197 0.0481025 2.84659C0.125517 2.61435 0.292019 2.42237 0.510981 2.31289L4.94159 0.0975844Z" fill="white"/>
+            </svg>
+           </button>
+        </div>
+        <div class="page__main__icons__location">
+          <button class="btn_location">
+            <svg width="24" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 24C9.61591 24 10.2024 23.7366 10.6116 23.2763L10.6126 23.2752L10.6199 23.2669L10.6378 23.2466L10.6391 23.2451C10.6545 23.2275 10.676 23.203 10.7031 23.1717C10.7574 23.1091 10.8344 23.0194 10.9309 22.9049C11.1237 22.676 11.3952 22.3471 11.719 21.9362C12.3649 21.1165 13.2284 19.959 14.0956 18.6087C15.7569 16.0219 17.7188 12.2986 17.7188 8.79007C17.7188 3.95789 13.8376 0 9 0C4.16244 0 0.28125 3.95789 0.28125 8.79007C0.28125 12.2986 2.24309 16.0219 3.90444 18.6087C4.77163 19.959 5.63514 21.1165 6.281 21.9362C6.60484 22.3471 6.87626 22.676 7.06912 22.9049C7.16562 23.0194 7.24264 23.1091 7.29688 23.1717C7.32399 23.203 7.34545 23.2275 7.36086 23.2451L7.37765 23.2642L7.38422 23.2716L7.3884 23.2763C7.79758 23.7366 8.38409 24 9 24ZM9 12C11.0711 12 12.75 10.3211 12.75 8.25C12.75 6.17893 11.0711 4.5 9 4.5C6.92893 4.5 5.25 6.17893 5.25 8.25C5.25 10.3211 6.92893 12 9 12Z" fill="white"/>
+            </svg>
+          </button>
+        </div>
+        <div class="page__main__icons__user">
+          <button class="btn_user">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM12 2.66667C6.84534 2.66667 2.66667 6.84534 2.66667 12C2.66667 17.1547 6.84534 21.3333 12 21.3333C17.1547 21.3333 21.3333 17.1547 21.3333 12C21.3333 6.84534 17.1547 2.66667 12 2.66667Z" fill="white"/>
+<path d="M15.75 8.25C15.75 10.3211 14.0711 12 12 12C9.92893 12 8.25 10.3211 8.25 8.25C8.25 6.17893 9.92893 4.5 12 4.5C14.0711 4.5 15.75 6.17893 15.75 8.25Z" fill="white"/>
+<path d="M5.31777 15.4091C6.55917 13.8306 9.08543 12.75 12 12.75C14.9145 12.75 17.4408 13.8306 18.6822 15.4091C17.4408 17.8375 14.9145 19.5 12 19.5C9.08542 19.5 6.55916 17.8375 5.31777 15.4091Z" fill="white"/>
+            </svg>
+          </button>
+        </div>
+        <div class="page__main__icons__price">
+          <button class="btn_price">
+            <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.875C0 1.18464 0.559644 0.625 1.25 0.625H3C4.66463 0.625 5.5734 1.68641 5.99782 2.55991C6.08578 2.74093 6.15677 2.91934 6.21412 3.08738H18.75C19.1094 3.08738 19.4515 3.2421 19.6888 3.51204C19.9261 3.78198 20.0357 4.14101 19.9897 4.49748L19.0564 11.7247C18.9759 12.348 18.4451 12.8146 17.8167 12.8146H6.15C6.13986 12.8146 6.13264 12.8152 6.12785 12.8158C6.12424 12.8195 6.11896 12.8255 6.11226 12.8348C6.06419 12.9011 6 13.0586 6 13.2823C6 13.506 6.06419 13.6635 6.11226 13.7299C6.11896 13.7391 6.12425 13.7452 6.12785 13.7489C6.13265 13.7495 6.13986 13.75 6.15 13.75H17.6667C18.357 13.75 18.9167 14.3096 18.9167 15C18.9167 15.6904 18.357 16.25 17.6667 16.25H6.15C5.24462 16.25 4.53297 15.8111 4.08774 15.1966C3.66915 14.6188 3.5 13.9174 3.5 13.2823C3.5 12.6472 3.66915 11.9458 4.08774 11.368C4.27526 11.1092 4.51004 10.8816 4.78664 10.7047C4.63028 9.4359 4.45493 8.08305 4.30738 6.96454C4.21368 6.25418 4.13134 5.63944 4.07244 5.20236C4.04299 4.98383 4.01941 4.80976 4.00319 4.69039L3.97819 4.50673C3.97495 4.48303 3.97239 4.45921 3.97051 4.43537L3.97029 4.43309C3.9697 4.42712 3.96827 4.41359 3.96566 4.39363C3.96039 4.35335 3.95061 4.28904 3.93385 4.20914C3.89918 4.04373 3.84071 3.8408 3.7492 3.65247C3.57541 3.29479 3.37585 3.125 3 3.125H1.25C0.559644 3.125 0 2.56536 0 1.875ZM6.6465 5.58738C6.68846 5.90152 6.73555 6.2558 6.78591 6.6376C6.93052 7.73383 7.10244 9.0596 7.25747 10.3146H16.7177L17.3282 5.58738H6.6465ZM6.13339 12.8107L6.13254 12.8113L6.13339 12.8107Z" fill="white"/>
+<circle cx="16.5625" cy="18.4375" r="1.5625" fill="white"/>
+<circle cx="7.8125" cy="18.4375" r="1.5625" fill="white"/>
+            </svg>
+            <span>4888 ₽</span>
+          </button>
+        </div>
+      </div>
       <breadcrumds-block />
         <div class="page__main__products">
         <product-block
@@ -135,6 +173,7 @@ import RecommendBlock from '@/components/RecommendBlock.vue'
 import TotalBlock from '@/components/TotalBlock.vue'
 import SidebarBlock from '@/components/SidebarBlock.vue'
 import FooterBlock from '@/components/FooterBlock.vue'
+import HamburgerMenu from '@/components/HamburgerMenu.vue'
 
 export default {
   components: {
@@ -145,7 +184,8 @@ export default {
     RecommendBlock,
     TotalBlock,
     SidebarBlock,
-    FooterBlock
+    FooterBlock,
+    HamburgerMenu
   },
 
   data () {
@@ -161,6 +201,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap');
 
 @media(min-width: 961px) {
  .page {
@@ -179,6 +220,9 @@ export default {
       margin-left: 8%;
       width: 100%;
       justify-content: space-between;
+    }
+    &__burger__menu {
+      display: none;
     }
   }
   &__main {
@@ -218,6 +262,10 @@ export default {
             left: 62%;
             top:84px
       }
+
+      &__icons {
+        display: none;
+      }
   }
 
   &__footer {
@@ -225,5 +273,73 @@ export default {
     padding: 32px 64px 32px 64px;
   }
  }
+}
+
+@media(max-width: 479px) {
+ body {
+   margin: 0;
+
+  .page__header {
+    margin: 16px;
+    display: flex;
+
+  &-logo>svg {
+    width: 145px;
+    height: 45px;
+  }
+  &__addresses {
+    display: none;
+  }
+  &__burger__menu {
+    display: flex;
+    margin-left: auto;
+      }
+  }
+  .page__main {
+
+      &__icons {
+        display: flex;
+        justify-content: space-between;
+
+        .btn_phone {
+          width: 57px;
+          height: 40px;
+          background: #333333;
+          border-radius: 0px 25px 25px 0px;
+        }
+
+        .btn_location {
+          width: 57px;
+          height: 40px;
+          background: #333333;
+          border-radius: 25px;
+        }
+        .btn_user {
+          width: 57px;
+          height: 40px;
+          background: #333333;
+          border-radius: 25px;
+        }
+        .btn_price {
+          display: flex;
+          height: 40px;
+          background: #CC693E;
+          border-radius: 25px 0px 0px 25px;
+          align-items: center;
+          padding: 10px 26px 10px 26px;
+
+          span {
+            padding-left: 8px;
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+          }
+        }
+      }
+  }
+}
 }
 </style>
