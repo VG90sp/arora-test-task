@@ -39,7 +39,7 @@
         <span class="product__order__composition__amount__price">{{ price *  counter }}</span>
       </div>
     </div>
-    <div class="product__order__button-close">
+    <div class="product__order__button-close product-close">
       <button>
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" fill="#999999"/>
@@ -130,7 +130,7 @@ export default {
     }
 }
 
-    &__button-close {
+    .product-close {
         display: flex;
         height: 24px;
         padding: 20px 16px 0 0;
@@ -256,7 +256,7 @@ export default {
       display: none;
     }
 
-    &__button-close {
+    .product-close {
       display: none;
     }
 

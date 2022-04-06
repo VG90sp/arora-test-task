@@ -24,12 +24,15 @@
 </defs>
 </svg>
       </div>
-    <img :src="image">
+    <img class="image_present" :src="image">
+    <div class="image_mobile">
+      <img class="image_product_mobile" :src="image_mobile">
+    </div>
     <div class="product__order__composition">
       <span class="product__order__composition__product">{{ product_name }}</span>
       <p>{{ product_text }}</p>
     </div>
-    <div class="product__order__button-close">
+    <div class="product__order__button-close present-close">
       <button>
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" fill="#999999"/>
@@ -64,6 +67,10 @@ export default {
     present: {
       type: String,
       required: false
+    },
+    image_mobile: {
+      type: String,
+      required: true
     }
   },
 
@@ -144,6 +151,30 @@ export default {
           padding-top: 10px;
         }
     }
+}
+@media(max-width: 479px) {
+div.product__order {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin-top: 8px;
+    border-radius: 0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.16);
+    background: #FFFFFF;
+
+    &__present {
+      display: none;
+    }
+
+    .image_present {
+      display: none;
+    }
+    .present-close>button {
+      width: 16px;
+      height: 16px;
+      background:white;
+    }
+  }
 }
 
 </style>

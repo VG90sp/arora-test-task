@@ -118,6 +118,7 @@
         product_name='Морс "Смородина"'
         product_text='Морс "Смородина", 1 л'
         present= true
+        image_mobile="https://i.ibb.co/HBxmjR5/image-present-mob.jpg"
          />
         </div>
         <aside class="page__main__aside">
