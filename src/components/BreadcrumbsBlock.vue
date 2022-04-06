@@ -48,6 +48,7 @@ export default {
         display: flex;
         flex-wrap: nowrap;
          overflow-x: auto;
+         margin-bottom: 24px;
 
         h2 {
           font-family: 'Roboto Slab';

@@ -77,6 +77,7 @@
         product_text="Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук"
         price=888
         image="https://i.postimg.cc/Jyj82t6t/image-1.jpg"
+        image_mobile="https://i.ibb.co/nbqZwyD/image-1.jpg"
         />
         <product-block
         product_name="Суприм"
@@ -84,6 +85,7 @@
         price=690
         novel= true
         image= "https://i.postimg.cc/5Y1Jd1Tg/image-2.jpg"
+        image_mobile="https://i.ibb.co/hB622jj/image-mob-2.jpg"
         />
         <product-block
         product_name="Бургер «Два сыра»"
@@ -91,6 +93,7 @@
         price=180
         novel= true
         image= "https://i.postimg.cc/K3x8NtmZ/image-3.jpg"
+        image_mobile="https://i.ibb.co/QmR35bc/image-mob-3.jpg"
         />
         <product-block
         product_name="Суши Унаги»"
@@ -98,6 +101,7 @@
         price=120
         novel= true
         image="https://i.postimg.cc/ZvHKD0q6/image-4.jpg"
+        image_mobile="https://i.ibb.co/sv0VM06/image-mob-4.jpg"
         />
         <product-block
         product_name="Умэ"
@@ -105,19 +109,20 @@
         price=385
         novel= true
         image="https://i.postimg.cc/Sjh655sK/image-5.jpg"
+        image_mobile="https://i.ibb.co/PGTX5s9/image-mob-5.jpg"
         />
         </div>
-        <aside class="page__main__aside">
-          <sidebar-block />
-        </aside>
-      <div class="page__main__present">
+        <div class="page__main__present">
         <h2 class="title">Подарки</h2>
         <present-block
         product_name='Морс "Смородина"'
         product_text='Морс "Смородина", 1 л'
         present= true
          />
-      </div>
+        </div>
+        <aside class="page__main__aside">
+          <sidebar-block />
+        </aside>
       <div class="page__main__recommend">
         <h2 class="title">Рекомендуем</h2>
         <div class="page__main__recommend__products">
@@ -296,7 +301,7 @@ export default {
       }
   }
   .page__main {
-
+    margin: 0;
       &__icons {
         display: flex;
         justify-content: space-between;
@@ -337,6 +342,17 @@ export default {
             line-height: 20px;
             color: #FFFFFF;
           }
+        }
+      }
+
+      &__present {
+        h2 {
+          font-family: 'Roboto Slab';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 28px;
+          margin-left: 16px;
         }
       }
   }

@@ -24,12 +24,15 @@
 </defs>
 </svg>
     </div>
-    <img :src="image">
+    <img class="image_product" :src="image">
+    <div class="image_mobile">
+      <img class="image_product_mobile" :src="image_mobile">
+    </div>
     <div class="product__order__composition">
       <span class="product__order__composition__product">{{ product_name }}</span>
       <p>{{ product_text }}</p>
       <div class="product__order__composition__amount">
-          <span class="product__order__composition__amount__price">{{ price }}</span>
+          <span class="product__order__composition__amount__price left_price">{{ price }}</span>
         <button class="left_btn" @click="lowCounter">-</button>
         <span class="counter">{{ counter }}</span>
         <button class="right_btn" @click="riseCounter">+</button>
@@ -79,6 +82,10 @@ export default {
     image: {
       type: String,
       required: true
+    },
+    image_mobile: {
+      type: String,
+      required: true
     }
   },
 
@@ -112,11 +119,16 @@ export default {
         padding: 0;
      }
 
-    img {
+    .image_product {
           border-radius:8px 0 0 8px;
           width:185px;
           height:215px;
     }
+@media(min-width: 961px){
+    .image_mobile {
+      display: none;
+    }
+}
 
     &__button-close {
         display: flex;
@@ -204,6 +216,92 @@ export default {
         }
     }
     }
+}
+@media(max-width: 479px) {
+  div.product__order {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin-top: 8px;
+    border-radius: 0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.16);
+    background: #FFFFFF;
+
+    &__novel {
+      display: none;
+    }
+
+    .image_product {
+      display: none;
+    }
+    .image_mobile {
+      position:relative;
+
+    .image_product_mobile {
+      height: 60px;
+      border-radius: 0;
+    }
+    }
+    .image_mobile::after{
+        content:"";
+        position: absolute;
+        background-color: #000000;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    p {
+      display: none;
+    }
+
+    &__button-close {
+      display: none;
+    }
+
+    &__composition {
+      padding: 0;
+
+      .product__order__composition__product{
+          content:"";
+          position: absolute;
+          left: 16px;
+          top: 22px;
+          color: #F1F1F1;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0;
+      }
+
+      &__amount {
+        padding: 0 16px 0 0;
+        margin-top: auto;
+        margin-bottom: auto;
+
+       span {
+          padding: 6px;
+        }
+
+        .left_price {
+          display: none;
+        }
+      }
+      .counter {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 4px 8px;
+      }
+      .left_btn, .right_btn {
+        width: 26px;
+      }
+    }
+  }
 }
 
 </style>
