@@ -155,6 +155,20 @@
             from_sum= true
             image_rec="https://i.postimg.cc/K4tkdSvH/image-rec-1.jpg"
           />
+          <recommend-block
+            product_name='Бургер «Два сыра»'
+            product_text='Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно'
+            price="387 ₽"
+            novel= true
+            image_rec="https://i.postimg.cc/0bxMvWz2/image-rec-2.jpg"
+          />
+           <recommend-block
+            product_name='Суши Эби'
+            product_text='Креветка'
+            price="130 ₽"
+            novel= true
+            image_rec="https://i.postimg.cc/jLs5mD1D/image-rec-3.jpg"
+          />
         </div>
       </div>
       <div class="page__main__total">
@@ -251,7 +265,8 @@ export default {
       &__recommend__products {
         display:flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         border-bottom: 2px solid #B3B3B3;
         padding-bottom: 64px;
       }
@@ -355,6 +370,14 @@ export default {
           line-height: 28px;
           margin-left: 16px;
         }
+      }
+
+      &__recommend {
+        display: none;
+      }
+
+      &__total {
+        display: none;
       }
   }
 }

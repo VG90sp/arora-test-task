@@ -3,10 +3,10 @@
     <h2>+358 баллов</h2>
     <p>Баллы начисляются в течении двух дней и доступны для использования при заказе от 500 руб. Только для зарегистрированных пользователей.</p>
     <p>Зарегистрируйтесь или войдите.</p>
-    <h2>Промокод</h2>
+    <h2 class="promo">Промокод</h2>
     <form action="URL">
-    <input type="text" placeholder="введите промокод">
-    <button class="sidebar__input_btn">Применить</button>
+      <input type="text" placeholder="введите промокод">
+      <button class="sidebar__input_btn">Применить</button>
     </form>
     <div class="total">
     <div class="total__price">
@@ -14,7 +14,8 @@
       <span class="total__price__sale">4200</span>
       <span>3580</span>
     </div>
-    <button>Далее</button>
+    <button class="btn_desktop">Далее</button>
+    <button class="btn_mobile">Оформить заказ</button>
 </div>
 </div>
 </template>
@@ -93,6 +94,67 @@ export default {
 
           .total__price {
               margin-right: auto;
+          }
+      }
+
+@media(min-width: 961px) {
+      .btn_mobile {
+          display: none;
+      }
+}
+  }
+  @media(max-width: 479px){
+      .sidebar {
+          box-shadow: none;
+          padding: 0 16px;
+          margin-bottom: 64px;
+
+          h2 {
+              margin: 32px 0 0 0;
+              font-size: 18px;
+              line-height: 24px;
+              margin-left: auto;
+          }
+          .promo {
+              margin-right: auto;
+              margin-left: 0;
+              font-size: 22px;
+              line-height: 32px;
+          }
+
+          p {
+              font-size: 12px;
+              line-height: 16px;
+          }
+
+          &__input_btn {
+            width: 140px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          .total{
+              margin-top: 32px;
+
+            .total__price {
+                margin-left: auto;
+                margin-right: 0;
+
+                span {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+          }
+
+          .btn_desktop {
+              display: none;
+          }
+
+          .btn_mobile {
+              height: 48px;
+              font-size: 14px;
+              line-height: 20px;
           }
       }
   }
