@@ -1,4 +1,4 @@
-# arora-test-task
+# pizza-store
 
 ## Project setup
 ```
